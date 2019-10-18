@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Oct  8 15:35:09 2019
+
+@author: vegardberge
+"""
+
+"""
+Les namn frå tastatur og skriv dei til fila 'mentor.txt'
+Les namna frå fila, skriv dei til skjermen
+@author: nmidd
+"""
+
+
+def skriv_til_fil():
+    """
+    Skriv mentornamn innleste
+    frå tastaturet til ei tekstfil
+    """
+    mentorfil = open('mentor.txt', 'w')
+    ferdig = False
+    while not ferdig:
+        namn = input('Namn på mentor: ')
+        if len(namn) > 0:
+            mentorfil.write(namn + '\n')
+        else:
+            ferdig = True
+
+    mentorfil.close()
+
+
+# Alternativ 1:
+def les_frå_fil1(filnamn):
+    """
+    Skriv mentornamn leste frå
+    ei tekstfil ut i konsollen
+    """
+
+
+# Alternativ 2:
+def les_frå_fil2(filnamn):
+    """
+    Skriv mentornamn leste frå
+    ei tekstfil ut i konsollen
+    """
+
+
+def les_fil_til_streng(filnamn):
+    """
+    Les mentornamn frå ei tekstfil,
+    og plasserer dei i ein streng
+    som blir returnert
+    """
+
+
+def les_fil_til_liste(filnamn):
+    """
+    Les mentornamn frå ei tekstfil,
+    og plasserer dei i ei liste
+    som blir returnert
+    """
+
+
+# Alternativ 1:
+def snu1(namn):
+    """
+    Returnerer ein streng oppgitt på forma
+    'etternamn, førenamn' omgjort til
+    'førenamn etternamn'
+    """
+
+
+# Alternativ 2:
+def snu2(namn):
+    """
+    Returnerer ein streng oppgitt på forma
+    'etternamn, førenamn' omgjort til
+    'førenamn etternamn'
+    """
+
+
+def snu_namn_på_fil(namn_gammal, namn_ny):
+    """
+    Skriv alle strengar på forma
+    'etternamn, førenamn' i fila namn_gammal
+    til fila namn_ny omgjort til forma
+    'førenamn etternamn'
+    """
+    
+    
+
+
+def main():
+    skriv_til_fil()
+    
+
+main()
